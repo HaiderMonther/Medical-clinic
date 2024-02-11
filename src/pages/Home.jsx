@@ -19,7 +19,9 @@ function Home() {
         
         <div className="btn">
            <Link to="/حجز موعد"  >حجز موعد</Link>
-           <p>انظر كيف نعمل <MdOutlineKeyboardDoubleArrowLeft /></p>
+           <div className='work_clinie'>
+            <Link to="/حول العيادة">انظر كيف نعمل <MdOutlineKeyboardDoubleArrowLeft /></Link>
+           </div>
         </div>
       </div>
 
