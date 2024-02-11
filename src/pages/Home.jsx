@@ -4,7 +4,7 @@ import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import imag from '../Images/doctor.svg'
 function Home() {
   return (
-    <>
+    <section>
     <div className='container'>
       
       <div className="textHome">
@@ -30,7 +30,7 @@ function Home() {
       </div>
 
     </div>
-    </>
+    </section>
   )
 }
 

@@ -27,6 +27,7 @@ header {
   height: 80px;
   padding: 0 2rem;
   color: var(--textColor);
+  max-width: 90em;
 }
 
 .logo > img {
@@ -111,13 +112,19 @@ nav {
 
 /* Home.js Styles */
 
+section {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   background-color: var(--containerColor);
-  margin: 50px 60px;
+  width: 60em;
   padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-top: 8em;
 }
 
 .caption h4 {
@@ -126,13 +133,13 @@ nav {
 }
 
 .caption p {
-  margin-top: 20px;
+  margin-top: 3em;
   width: 16em;
 }
 
 .btn {
   display: flex;
-  gap: 8em;
+  gap: 5em;
   align-items: center;
   margin-top: 6em;
 }
