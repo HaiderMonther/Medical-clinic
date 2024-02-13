@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import imag from '../Images/doctor.svg'
+import imag from '../Images/doctor.svg';
 function Home() {
   return (
     <section>
