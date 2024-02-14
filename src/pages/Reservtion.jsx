@@ -35,9 +35,13 @@ function Reservtion() {
       </div>
 
       <div className="Left_Res">
-        <div>
-          <Link to="">احجز الان</Link>
-
+        <div className='btn_res'>
+          <Link to="">احجز الان</Link>   
+        </div>
+        <div className='table-res'>
+          <div className='day_res'>
+            
+          </div>
         </div>
       </div>
     </section>
