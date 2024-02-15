@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import imag from '../Images/doctor.svg';
 import {Link} from "react-router-dom"
 
 function Reservtion() {
+  const [activeContentIndex,setActiveContentIndex] = useState(0);
   return (
     <section className='reservation'>
       <div className="Right_Res">
@@ -40,7 +41,38 @@ function Reservtion() {
         </div>
         <div className='table-res'>
           <div className='day_res'>
-            
+            <menu>
+              <button className={activeContentIndex === 0 ? "active" : ""}
+                      onClick={() => setActiveContentIndex(0)}
+              >
+                الاحد 
+                <label className='number_day_res'>4</label>
+              </button>
+              <button className={activeContentIndex === 0 ? "active" : ""}
+                      onClick={() => setActiveContentIndex(0)}
+              >
+                  الاثنين
+                  <label className='number_day_res'>7</label>
+              </button>
+              <button className={activeContentIndex === 0 ? "active" : ""}
+                      onClick={() => setActiveContentIndex(0)}
+              >
+                الثلاثاء
+                <label className='number_day_res'>1</label>
+              </button>
+              <button className={activeContentIndex === 0 ? "active" : ""}
+                      onClick={() => setActiveContentIndex(0)}
+              >
+                الاربعاء
+                <label className='number_day_res'>0</label>
+              </button>
+              <button className={activeContentIndex === 0 ? "active" : ""}
+                      onClick={() => setActiveContentIndex(0)}
+              >
+                الخميس
+                <label className='number_day_res'>3</label>
+              </button>
+            </menu>
           </div>
         </div>
       </div>
