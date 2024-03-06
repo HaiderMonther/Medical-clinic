@@ -339,13 +339,14 @@ section {
 .day_res > menu > button {
   display: flex;
   align-items: center;
-  /* text-align: center; */
+  text-align: center;
   gap: 4px;
   width: 5em;
   font-size: 18px;
   border-color: var(--borderColor);
   background-color: unset;
   cursor: pointer;
+  color: var(--textColor);
 }
 
 .number_day_res{
@@ -378,4 +379,104 @@ section {
   padding: 5px 10px;
   border-radius: 20px;
   color: var(--containerColor);
+}
+
+/*  Media Queries */
+
+@media (max-width: 767px){
+  .reservation {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .Left_Res {
+    width: 20em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px){}
+@media (min-width: 992px){}
+@media (min-width: 1200px){}
+
+/* bookNow */
+
+* {
+  box-sizing: border-box;
+}
+form {
+  max-width: 400px;
+  margin: 10em auto;
+  padding: 20px;
+  background-color: var(--containerColor);
+  border: 1px solid var(--bodyColor);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the form fields and labels */
+form div {
+  margin-bottom: 15px;
+}
+
+
+.BookInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--activeColor);
+}
+
+.BookInput::placeholder {
+  color: var(--containerColor);
+}
+/* Styles for error messages */
+span {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Styles for the submit button */
+button {
+  background-color: var(--activeColor);
+  color: var(--containerColor);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* contact-form */
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 50em;
+}
+
+/* Medical */
+
+.Medical {
+  background-color: var(--containerColor);
+  margin: 4em auto;
+  max-width: 40em;
+  border-radius: 5px;
+  padding: 5px;
 }

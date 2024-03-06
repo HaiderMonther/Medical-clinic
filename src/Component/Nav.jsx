@@ -13,8 +13,10 @@ function Nav() {
 		);
 	};
   return (
-    <header>
-         <Link className="logo" to="/"><img src={logo} alt="logo" /></Link>
+    <header className="navbar">
+         <div>
+            <Link className="logo" to="/"><img src={logo} alt="logo" /></Link>
+         </div>
       <nav ref={navRef}>
 
               <NavLink className="nav"  to="/">  الصفحة الرئيسية</NavLink>
