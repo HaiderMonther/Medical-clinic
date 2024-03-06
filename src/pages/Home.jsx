@@ -2,9 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import imag from '../Images/doctor.svg';
+import Nav from '../Component/Nav';
 function Home() {
   return (
     <section>
+      <div>
+      <Nav />
+      
     <div className='container'>
       
       <div className="textHome">
@@ -29,6 +33,7 @@ function Home() {
         <img src={imag} alt="" />
       </div>
 
+    </div>
     </div>
     </section>
   )

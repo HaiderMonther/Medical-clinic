@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-
+import React, {useState} from 'react';
+import Nav from '../Component/Nav';
 function Contact() {
   const [formData, setFormData] = useState({
     email: '',
@@ -28,6 +28,8 @@ function Contact() {
 
   }
   return (
+    <div>
+      <Nav />
     <form type="submit" className='contact-form'>
       <input className='BookInput' type="text" name=""  placeholder='الاسم الكامل'/>
       <input className='BookInput' type="number" name=""  placeholder='العمر '/>
@@ -45,6 +47,7 @@ function Contact() {
       <textarea className='BookInput' name="massage" cols="30" rows="5" placeholder='النص'></textarea>
       <button type="submit">ارسال</button>
     </form>
+    </div>
   )
 }
 

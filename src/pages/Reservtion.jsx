@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import imag from "../Images/doctor.svg";
 import { Link } from "react-router-dom";
-import Nav from '../Component/Nav';
 
+function ReservtionTim() {}
 
-
-function Reservation() {
+function Reservation(props) {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
   return (
-    <div>
-      <Nav />
-    
     <section className="reservation">
       <div className="Right_Res">
         <div className="img_right_res">
@@ -48,7 +44,7 @@ function Reservation() {
 
       <div className="Left_Res">
         <div className="btn_res">
-          <Link to="/طلب حجز">احجز الان</Link>
+          <Link to="">احجز الان</Link>
         </div>
         <div className="table-res">
           <div className="day_res">
@@ -90,42 +86,10 @@ function Reservation() {
               </button>
             </menu>
           </div>
-          
-          <div className="list_res">
-            <div className="res_person">
-              <span>8:00 PM</span>
-              <div className="res_time">
-                <h5> محمد جاسم</h5>
-                <p>1</p>
-              </div>
-            </div>
-            <div className="res_person">
-              <span>9:00 PM</span>
-              <div className="res_time">
-                <h5> محمد جاسم</h5>
-                <p>2</p>
-              </div>
-            </div>
-            <div className="res_person">
-              <span>9:45 PM</span>
-              <div className="res_time">
-                <h5> محمد جاسم</h5>
-                <p>3</p>
-              </div>
-            </div>
-            <div className="res_person">
-              <span>10:00 PM</span>
-              <div className="res_time">
-                <h5> محمد جاسم</h5>
-                <p>4</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    </div>
   );
 }
 
-export default Reservation;
+export default Reservtion;

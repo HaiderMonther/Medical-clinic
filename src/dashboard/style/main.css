@@ -1,0 +1,74 @@
+.sider {
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(67 42 96 / 88%);
+  cursor: pointer;
+}
+
+.menu_bar {
+  height: 88vh;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1rem;
+  position: relative;
+}
+
+.toggel1 {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav-dash {
+  padding: 0px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.dash-home > h1 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.dash-home {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+  width: 100%;
+  padding: 0 22px;
+}
+
+.NameImage {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

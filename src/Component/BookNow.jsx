@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import Nav from '../Component/Nav';
 function BookNow() {
     const [formData, setFormData] = useState({
         username: '',
@@ -32,14 +32,10 @@ function BookNow() {
     
         if(!formData.chan.trim()) {
             validationErrors.chan = "يجب ادخال نوع الجنس"
-        } else if(formData.chan.length < 6){
-            validationErrors.chan = "password should be at least 6 char"
         }
 
         if(!formData.Age.trim()) {
             validationErrors.Age = "يجب ادخال العمر "
-        } else if(formData.Age.length < 4){
-            validationErrors.Age = "password should be at least 6 char"
         }
     
         
@@ -52,7 +48,10 @@ function BookNow() {
     
       }
   return (
-<form onSubmit={handleSubmit}>
+    <div>
+      <Nav />
+    
+    <form onSubmit={handleSubmit}>
       <div>
     
         <input className='BookInput'
@@ -97,6 +96,7 @@ function BookNow() {
       </div>
       <button type="submit">Submit</button>
     </form>
+    </div>
   )
 }
 
