@@ -31,21 +31,23 @@ function Dashboard() {
         <ToggelThem darkTheme={darkTheme} toggelThem={toggelThem} />
       </Sider>
       <Layout>
-        <Header className="Nav-dash  ">
-          <Button
-            type="text"
-            className="toggel"
-            onClick={() => setCollapse(!collapsed)}
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          />
-          <div className="dash-home">
-            <h1>الصفحة الرئيسية</h1>
-            <div className="NameImage">
-              <img src="" alt="" />
-              <span>علي حسين</span><br/>
-              <p>مديـر عام</p>
+        <Header className="Nav-dash">
+         <div className=''>
+            <Button
+              type="text"
+              className="toggel"
+              onClick={() => setCollapse(!collapsed)}
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+            />
+            <div className="dash-home">
+              <h1>الصفحة الرئيسية</h1>
+              <div className="NameImage">
+                <img src="" alt="" />
+                <span>علي حسين</span><br/>
+                <p>مديـر عام</p>
+              </div>
             </div>
-          </div>
+         </div>
         </Header>
       </Layout>
     </Layout>

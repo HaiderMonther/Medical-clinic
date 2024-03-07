@@ -22,7 +22,7 @@ const Sidbar = ({ darkTheme }) => {
                 <Link to= "/dashboard">الصفحة الرئيسية</Link>
             </Menu.Item>
             <Menu.Item key="activity" icon={<FieldTimeOutlined />}>
-                
+                عزيز جاسم
             </Menu.Item>
             <Menu.Item key="progress" icon={<IoIosPeople />}>
                 المرضى
