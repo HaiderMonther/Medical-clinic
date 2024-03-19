@@ -348,6 +348,32 @@ section {
   color: var(--textColor);
 }
 
+.border-animation::before,
+.border-animation::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 0px solid transparent;
+}
+.border-animation::before {
+  top: -4px;
+  left: -4px;
+  border-top: 2px solid #fbbf24;
+  border-left: 2px solid #fbbf24;
+}
+.border-animation::after {
+  bottom: -4px;
+  right: -4px;
+  border-bottom: 2px solid #fbbf24;
+  border-right: 2px solid #fbbf24;
+}
+.border-animation:hover::before,
+.border-animation:hover::after {
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+}
+
 .table-res {
   width: 100%;
 }
@@ -471,8 +497,47 @@ section {
   }
 }
 @media (min-width: 992px) {
+  .reservation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+  }
+
+  .Left_Res {
+    width: 38em;
+    margin: 10px -25px 1px 23px;
+  }
+
+  .day_res > menu > button {
+    gap: 3px;
+    width: 5em;
+    font-size: 18px;
+}
+
+
 }
 @media (min-width: 1200px) {
+  .reservation {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+}
+
+  .Right_Res {
+    width: 26em;
+ }
+
+  .Left_Res {
+    width: 60em;
+    margin: 10px -25px 1px 23px;
+ }
+
+ .day_res > menu > button {
+  flex-direction: row;
+  gap: 15px;
+  width: 9em;
+  font-size: 17px;
+}
 }
 
 /* bookNow */
